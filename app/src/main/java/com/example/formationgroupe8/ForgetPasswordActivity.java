@@ -4,22 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class SignUpActivity extends AppCompatActivity {
+public class ForgetPasswordActivity extends AppCompatActivity {
 
-    private TextView goToSignIn;
+    private Button goToSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_forget_password);
         getSupportActionBar().hide();
 
-        goToSignIn = findViewById(R.id.goToSignIn);
+        goToSignIn = findViewById(R.id.goToSignInFromForget);
 
         goToSignIn.setOnClickListener(v -> {
-            startActivity(new Intent(SignUpActivity.this, SignInActivity.class));
+            startActivity(new Intent(ForgetPasswordActivity.this, SignInActivity.class));
         });
     }
 }
