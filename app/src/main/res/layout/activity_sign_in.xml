@@ -63,6 +63,7 @@
                 android:textColor="@color/colorApp"/>
 
             <EditText
+                android:id="@+id/emailSignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_email"
@@ -87,6 +88,7 @@
 
 
             <EditText
+                android:id="@+id/passwordSignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_password"
@@ -100,6 +102,7 @@
                 />
 
             <CheckBox
+                android:id="@+id/rememberMe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Remember Me !"
@@ -119,6 +122,7 @@
                 android:textColor="@color/colorApp"/>
 
             <Button
+                android:id="@+id/btnSignIn"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Sign in"
