@@ -52,7 +52,7 @@ public class SignInActivity extends AppCompatActivity {
         boolean resCheckBox = preferences.getBoolean("rememberMe", false);
 
         if (resCheckBox) {
-            startActivity(new Intent(SignInActivity.this, HomeActivity.class));
+            startActivity(new Intent(SignInActivity.this, ProfileActivity.class));
         }
 
         rememberMe.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -108,7 +108,7 @@ public class SignInActivity extends AppCompatActivity {
         FirebaseUser logedUser = firebaseAuth.getCurrentUser();
         if (logedUser != null) {
             if (logedUser.isEmailVerified()) {
-                startActivity(new Intent(SignInActivity.this, HomeActivity.class));
+                startActivity(new Intent(SignInActivity.this, ProfileActivity.class));
                 progressDialog.dismiss();
                 finish();
             }else {
